@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="res/imgs/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shujat Ali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            text-align: left; /* Align text to the left */
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0000ee;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        header a:hover {
+            background: #e8491d;
+            transition: 0.3s;
+        }
+        .content-section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            text-align: left;
+            overflow: hidden; /* Clear float */
+        }
+
+        
+        footer img {
+            margin-left: 10px;
+            float: right; 
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#page1").show();
+            $("header a").click(function(){
+                var target = $(this).attr("href");
+                $(".content-section").hide();
+                $(target).show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/2575406?v=4" alt="Shujat Ali">
+        
+        <div style="display: inline-block;width: 80%;"> 
+
+        <a href="#page1">Home</a>
+        <a href="#page2">Page 1</a>
+        </div>
+    </header>
+    <section id="page1" class="content-section">
+        <div class="container">
+            
+            <h1>Syed Shujat Ali Shah</h1>
+            <h2>I have finished below courses</h2>
+            <ul>
+                <li><a href="#">CS401 - Modern Programming</a></li>
+                <li><a href="#">CS435 - Algorithms</a></li>
+                <li><a href="#">CS473 - Mobile Device Programming</a></li>
+                <li><a href="#">CS544 - Enterprise Architecture</a></li>
+                <li><a href="#">CS516 - Cloud Computing</a></li>
+                <li><a href="#">CS590A - Software Architecture</a></li>
+                <li><a href="#">CS422 - Database Management Systems</a></li>
+                <li><a href="#">CS545 - Web Applications - Architecture and Frameworks</a></li>
+                <li><a href="#">STC506A - STC Pt 1- ComPro </a></li>
+                <li><a href="#">MGT5341 - Career Strategies for Information Technology </a></li>
+                <li><a href="#">STC506B - Leadership for Tech Managers </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page2" class="content-section">
+        <div class="container">
+            <div class="content">
+                <ul>
+                    <li><a href="#">Lab01 - Home Page</a></li>
+                    <li><a href="#">Lab02 - About Me</a></li>
+                    <li><a href="#">Lab02 - Recipe</a></li>
+                    <li><a href="#">Lab03 - Movie Review</a></li>
+                    <li><a href="#">Lab04</a></li>
+                    <li><a href="#">Lab05</a></li>
+                    <li><a href="#">Lab06</a></li>
+                    <li><a href="#">Lab07</a></li>
+                    <li><a href="#">Lab08</a></li>
+                    <li><a href="#">Lab09</a></li>
+                    <li><a href="#">Lab10</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+         <p>© Syed Shujat Ali Shah 
+            <a href="https://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator"/></a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator" /></a>
+        </p>
+        <p>Maharishi University of Management</p>
+        <p>Address: 1000 N 4th St., Fairfield, Iowa, 52557</p>
+        <p>Email: <a href="mailto:syedshujat.shah@miu.edu">syedshujat.shah@miu.edu</a></p>
+    </footer>
+</body>
+</html>
