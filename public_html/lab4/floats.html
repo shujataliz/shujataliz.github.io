@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding: 0;
+      }
+      header {
+        background-color: #add8e6;
+        text-align: center;
+        padding: 20px;
+      }
+      footer {
+        background-color: #2f4f4f;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+      nav {
+        background-color: #2f4f4f;
+        display: flex;
+        justify-content: center;
+      }
+      .menu {
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        border-right: 2px solid black;
+      }
+      .menu:last-child {
+        border-right: none;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .column {
+        flex: 1;
+        height: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .column1 {
+        background-color: #aaa;
+      }
+      .column2 {
+        background-color: #bbb;
+      }
+      .column3 {
+        background-color: #ccc;
+      }
+      @media (max-width: 600px) {
+        .column {
+          flex: 100%;
+        }
+        .column2 {
+          order: -1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Header</h1></header>
+    <nav>
+      <div class="menu">Menu1</div>
+      <div class="menu">Menu2</div>
+      <div class="menu">Menu3</div>
+    </nav>
+    <div class="content">
+      <div class="column column1">Column1</div>
+      <div class="column column2">Column2</div>
+      <div class="column column3">Column3</div>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
